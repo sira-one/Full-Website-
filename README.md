@@ -1,25 +1,26 @@
-# SIRA ONE Website
+# SIRA ONE — Final Website
 
-Bilingual responsive website for SIRA ONE — Secure Intelligent Remote Automation.
+Bilingual responsive static website for SIRA ONE — Secure Intelligent Remote Automation.
 
 ## Pages
-- Home
-- Solutions
-- Services
-- Industries
-- About Us
-- Contact Us
+Home / Solutions / Services / Industries / About Us / Contact Us
 
-## Important
-The contact form is prepared for Formspree. Replace `YOUR_FORM_ID` in `contact.html` with the Formspree form ID before publishing.
+## Branding
+Uses the exact SIRA ONE shield logo supplied by the owner. English: Montserrat. Arabic: Cairo.
 
 ## GitHub Pages
-1. Upload all files to the repository root.
-2. Go to Settings → Pages.
-3. Deploy from the `main` branch and `/ (root)`.
-4. Later connect `sira-one.com` under Custom domain.
+The repository includes `CNAME` with `sira-one.com`.
 
-## Notes
-- No public phone number is displayed.
-- Phone is required only inside the contact form.
-- Arabic/English switch is stored in browser localStorage.
+## Contact form
+The form is prepared for Formspree. Replace `YOUR_FORM_ID` in `contact.html` with the actual Formspree endpoint before launch. This is the only external service configuration still required for the form to send mail.
+
+## DNS
+For GitHub Pages, the apex domain uses GitHub's A records and `www` uses a CNAME to `sira-one.github.io`.
+
+## Language
+- Primary/default website language: English.
+- Arabic is available through the language switcher.
+- Arabic expansion of SIRA: **التحكم الآمن الذكي عن بُعد**.
+
+## Default language fix
+The website now uses a versioned language preference key, so any Arabic preference saved by an older version cannot make the new deployment open in Arabic. English is the guaranteed first-visit/default language.
