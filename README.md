@@ -24,3 +24,6 @@ For GitHub Pages, the apex domain uses GitHub's A records and `www` uses a CNAME
 
 ## Default language fix
 The website now uses a versioned language preference key, so any Arabic preference saved by an older version cannot make the new deployment open in Arabic. English is the guaranteed first-visit/default language.
+
+## Logo deployment
+The logo file `sira-one-logo.jpg` is intentionally stored in the repository root so it is uploaded reliably through GitHub's web interface. All pages reference this root file.
