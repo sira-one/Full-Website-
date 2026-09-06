@@ -1,4 +1,4 @@
-<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="SIRA ONE — Secure Intelligent Remote Automation. Security, cybersecurity, smart automation and smart energy solutions.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>SIRA ONE</title></head><body>
@@ -11,7 +11,7 @@
 <a class="" href="industries.html" data-i18n="industries">INDUSTRIES</a>
 <a class="" href="about.html" data-i18n="about">ABOUT US</a>
 <a class="active" href="contact.html" data-i18n="contact">CONTACT US</a>
-</nav><div class="nav-tools"><button class="lang" onclick="toggleLang()" data-lang>العربية</button><a class="btn primary" href="contact.html" data-i18n="quote">GET A QUOTE</a><button class="menu">☰</button></div>
+</nav><div class="nav-tools"><button class="lang" onclick="toggleLang()" data-lang>العربية</button><a class="btn primary" href="contact.html" data-i18n="quote">GET A QUOTE</a><button class="menu" id="mobileMenu" type="button" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">☰</button></div>
 </div></header>
 <main><section class="page-hero container"><div class="kicker">SIRA ONE</div><h1 data-i18n="contactTitle">LET'S BUILD A SMARTER & SAFER SPACE</h1><p>Tell us about your requirements and our team will get back to you.</p></section><section class="section container"><div class="form-wrap"><div class="about-box"><h2>CONTACT SIRA ONE</h2><p>Email:</p><p><a style="color:var(--cyan)" href="mailto:info@sira-one.com">info@sira-one.com</a></p><p style="color:var(--muted);font-size:12px">Phone is requested only inside the inquiry form and is not displayed publicly.</p></div><div class="form-card">
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -23,8 +23,15 @@
 <label data-i18n="message">Message</label><textarea name="message" required></textarea><input type="hidden" name="_subject" value="New SIRA ONE Website Inquiry">
 <button class="btn primary" type="submit" data-i18n="send">SEND REQUEST</button></form></div></div></section></main>
 <footer><div class="container footer-grid">
-<div><div class="brand"><img class="logo" src="sira-one-logo.jpg" alt="SIRA ONE"><span><span class="brand-name">SIRA ONE</span><span class="brand-tag" data-brand-tag>SECURE INTELLIGENT<br>REMOTE AUTOMATION</span></span></div><p>Security and Smart Systems</p><p>Smart Evolution for Every Space.</p></div>
-<div><h4>QUICK LINKS</h4><a href="index.html" data-i18n="home">HOME</a><a href="solutions.html" data-i18n="solutions">SOLUTIONS</a><a href="services.html" data-i18n="services">SERVICES</a><a href="industries.html" data-i18n="industries">INDUSTRIES</a><a href="about.html" data-i18n="about">ABOUT US</a><a href="contact.html" data-i18n="contact">CONTACT US</a></div>
-<div><h4>SOLUTIONS</h4><a href="solutions.html">Security Systems</a><a href="solutions.html">Cybersecurity</a><a href="solutions.html">Automation</a><a href="solutions.html">Smart Energy</a></div>
+<div>
+<div class="brand"><img class="logo" src="sira-one-logo.jpg" alt="SIRA ONE"><span><span class="brand-name">SIRA ONE</span><span class="brand-tag" data-brand-tag>SECURE INTELLIGENT<br>REMOTE AUTOMATION</span></span></div>
+<p>Security and Smart Systems</p><p>Smart Evolution for Every Space.</p>
+</div>
+<div><h4>QUICK LINKS</h4><ul class="quick-links">
+<li><a href="index.html">HOME</a></li><li><a href="solutions.html">SOLUTIONS</a></li><li><a href="services.html">SERVICES</a></li><li><a href="industries.html">INDUSTRIES</a></li><li><a href="about.html">ABOUT US</a></li><li><a href="contact.html">CONTACT US</a></li>
+</ul></div>
+<div><h4>SOLUTIONS</h4><ul class="quick-links">
+<li><a href="solutions.html#security">Security Systems</a></li><li><a href="solutions.html#cybersecurity">Cybersecurity</a></li><li><a href="solutions.html#automation">Automation</a></li><li><a href="solutions.html#energy">Smart Energy</a></li>
+</ul></div>
 <div><h4>EMAIL</h4><a href="mailto:info@sira-one.com">info@sira-one.com</a><p>Amman, Jordan</p></div>
 </div><div class="container copyright"><span>© 2026 SIRA ONE. All Rights Reserved.</span><span>Security and Smart Systems</span></div></footer><script src="script.js"></script></body></html>

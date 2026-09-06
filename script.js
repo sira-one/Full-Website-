@@ -1,3 +1,4 @@
+function toggleMenu(){const nav=document.querySelector("nav"),menu=document.getElementById("mobileMenu");if(!nav||!menu)return;const open=nav.classList.toggle("mobile-open");menu.setAttribute("aria-expanded",open?"true":"false");menu.setAttribute("aria-label",open?"Close menu":"Open menu");menu.textContent=open?"×":"☰";}
 
 const D={
 en:{home:"HOME",solutions:"SOLUTIONS",services:"SERVICES",industries:"INDUSTRIES",about:"ABOUT US",contact:"CONTACT US",quote:"GET A QUOTE",
@@ -34,3 +35,6 @@ document.querySelectorAll("[data-brand-tag]").forEach(e=>e.innerHTML=lang==="ar"
 }
 function toggleLang(){lang=lang==="en"?"ar":"en";localStorage.setItem(LANG_KEY,lang);applyLang()}
 document.addEventListener("DOMContentLoaded",applyLang);
+
+
+document.addEventListener("DOMContentLoaded",()=>{const nav=document.querySelector("nav"),menu=document.getElementById("mobileMenu");if(nav&&menu){nav.addEventListener("click",e=>{if(e.target.closest("a")){nav.classList.remove("mobile-open");menu.setAttribute("aria-expanded","false");menu.setAttribute("aria-label","Open menu");menu.textContent="☰";}});}});
